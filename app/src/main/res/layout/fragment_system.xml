@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.system.SystemFragment"
+    android:background="#8B20E4FD">
+
+    <TextView
+        android:id="@+id/wrap1"
+        android:layout_width="356dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#8B20E4FD"
+        android:backgroundTintMode="src_over"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/wrap2"
+        android:layout_width="356dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#8B20E4FD"
+        android:backgroundTintMode="src_over"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrap1" />
+
+    <TextView
+        android:id="@+id/textPID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:text="PID系数"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/wrap1"
+        app:layout_constraintTop_toTopOf="@+id/wrap1" />
+
+    <TextView
+        android:id="@+id/textP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="56dp"
+        android:text="P"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/wrap1"
+        app:layout_constraintTop_toTopOf="@+id/wrap1" />
+
+    <EditText
+        android:id="@+id/numberP"
+        android:layout_width="67dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_frame"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="300"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/wrap1"
+        app:layout_constraintTop_toBottomOf="@+id/textP" />
+
+    <TextView
+        android:id="@+id/textI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="56dp"
+        android:text="I"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textP"
+        app:layout_constraintTop_toTopOf="@+id/wrap1" />
+
+    <EditText
+        android:id="@+id/numberI"
+        android:layout_width="67dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_frame"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="400"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/numberP"
+        app:layout_constraintTop_toBottomOf="@+id/textI" />
+
+    <TextView
+        android:id="@+id/textD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="54dp"
+        android:text="D"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/wrap1"
+        app:layout_constraintStart_toEndOf="@+id/textI"
+        app:layout_constraintTop_toTopOf="@+id/wrap1" />
+
+    <EditText
+        android:id="@+id/numberD"
+        android:layout_width="67dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_frame"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="500"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/numberI"
+        app:layout_constraintTop_toBottomOf="@+id/textD" />
+
+    <Button
+        android:id="@+id/GetPID"
+        android:layout_width="67dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#0CFF16"
+        android:gravity="center"
+        android:text="获取"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/wrap1"
+        app:layout_constraintStart_toStartOf="@+id/wrap1" />
+
+    <Button
+        android:id="@+id/SetPID"
+        android:layout_width="67dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#ECD50F"
+        android:gravity="center"
+        android:text="设置"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/wrap1"
+        app:layout_constraintEnd_toEndOf="@+id/wrap1" />
+
+    <TextView
+        android:id="@+id/textTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="9dp"
+        android:text="温度系数"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/wrap2"
+        app:layout_constraintTop_toTopOf="@+id/wrap2"/>
+
+    <TextView
+        android:id="@+id/textEmissivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="62dp"
+        android:text="发射率E"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/wrap2"
+        app:layout_constraintTop_toTopOf="@+id/wrap2" />
+
+    <TextView
+        android:id="@+id/textTransmittance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="62dp"
+        android:text="透射率T"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textEmissivity"
+        app:layout_constraintTop_toTopOf="@+id/wrap2" />
+
+    <EditText
+        android:id="@+id/Emissivity"
+        android:layout_width="67dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_frame"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="1.00"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/wrap2"
+        app:layout_constraintTop_toBottomOf="@+id/textEmissivity" />
+
+    <EditText
+        android:id="@+id/Transmittance"
+        android:layout_width="67dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_frame"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="1.00"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/Emissivity"
+        app:layout_constraintTop_toBottomOf="@+id/textTransmittance" />
+
+    <Button
+        android:id="@+id/GetTemp"
+        android:layout_width="67dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#0CFF16"
+        android:gravity="center"
+        android:text="获取"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/wrap2"
+        app:layout_constraintTop_toBottomOf="@+id/Emissivity" />
+
+    <Button
+        android:id="@+id/SetTemp"
+        android:layout_width="67dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#ECD50F"
+        android:gravity="center"
+        android:text="设置"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/GetTemp"
+        app:layout_constraintTop_toBottomOf="@+id/Transmittance" />
+</androidx.constraintlayout.widget.ConstraintLayout>

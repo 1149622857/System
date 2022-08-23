@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8B20E4FD"
+    tools:context=".ui.manual.ManualFragment">
+
+
+    <TextView
+        android:id="@+id/textManualAndExternalControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="手动&amp;外控"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textFeedbackMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="112dp"
+        android:text="反馈模式:"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/FeedbackMode"
+        android:layout_width="50dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="112dp"
+        android:background="@color/white"
+        android:entries="@array/ModeChoose"
+        android:spinnerMode="dropdown"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textFeedbackMode"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textManualTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:text="手动温度（°C）:"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textManualEfficiency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="手动功率（%）:"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textManualTemp" />
+
+    <EditText
+        android:id="@+id/ManualTemp"
+        android:layout_width="66dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="196dp"
+        android:background="@drawable/round_frame"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="200"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ManualEfficiency"
+        android:layout_width="67dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/round_frame"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="50"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ManualTemp" />
+
+    <Button
+        android:id="@+id/TestLaser"
+        android:layout_width="198dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#FFEB3E"
+        android:gravity="center"
+        android:text="测试激光"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/OpenRedLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/OpenRedLight"
+        android:layout_width="198dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#FF2B2B"
+        android:gravity="center"
+        android:text="打开红光"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

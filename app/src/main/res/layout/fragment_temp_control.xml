@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8B20E4FD"
+    tools:context=".ui.temp_control.TempControlFragment">
+
+    <Button
+        android:id="@+id/FirmwareVersion"
+        android:layout_width="198dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center"
+        android:text="固件版本"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/PowerCalibration"
+        android:layout_width="198dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center"
+        android:text="功率标定"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FirmwareVersion" />
+
+    <Button
+        android:id="@+id/SamplingAnalysis"
+        android:layout_width="198dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center"
+        android:text="采样分析"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PowerCalibration" />
+
+    <Button
+        android:id="@+id/DaHengCCD"
+        android:layout_width="198dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center"
+        android:text="大恒CCD"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SamplingAnalysis" />
+
+    <Button
+        android:id="@+id/HaiKangCCD"
+        android:layout_width="198dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#FFFFFF"
+        android:backgroundTintMode="add"
+        android:gravity="center"
+        android:text="海康CCD"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DaHengCCD" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

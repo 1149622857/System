@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8B20E4FD"
+    tools:context=".ui.wire_feed.WireFeedFragment">
+
+
+    <TextView
+        android:id="@+id/textWireControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="送丝控制"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPulseEquivalent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="128dp"
+        android:text="脉冲当量（ppm）:"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/PulseEquivalent"
+        android:layout_width="56dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="128dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="50"
+        android:inputType="number"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textPulseEquivalent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/GetPulse"
+        android:layout_width="67dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#0CFF16"
+        android:gravity="center"
+        android:text="获取"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/PulseEquivalent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/SetPulse"
+        android:layout_width="67dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#ECD50F"
+        android:gravity="center"
+        android:text="设置"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/GetPulse"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textSilkDeliveryAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="180dp"
+        android:text="送丝动作"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/SaveParameter"
+        android:layout_width="93dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="175dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#0CFF16"
+        android:gravity="center"
+        android:text="保存参数"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/SilkDeliveryAction"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="268dp"
+        android:text="开始时间（ms）:"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/StartTime"
+        android:layout_width="56dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="268dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="0"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textSendLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
+        android:text="送丝长度（mm）:"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textStartTime" />
+
+    <EditText
+        android:id="@+id/SendLength"
+        android:layout_width="56dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="29dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="0.5"
+        android:inputType="number"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StartTime" />
+
+    <TextView
+        android:id="@+id/textSendSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
+        android:text="送丝速度（mm/s）:"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSendLength" />
+
+    <EditText
+        android:id="@+id/SendSpeed"
+        android:layout_width="56dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="29dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="90.0"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SendLength" />
+
+    <TextView
+        android:id="@+id/textBackLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
+        android:text="回丝长度（mm）:"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSendSpeed" />
+
+    <EditText
+        android:id="@+id/BackLength"
+        android:layout_width="56dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="29dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="0.2"
+        android:inputType="number"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SendSpeed" />
+
+    <TextView
+        android:id="@+id/textBackSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
+        android:text="回丝速度（mm）:"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBackLength" />
+
+    <EditText
+        android:id="@+id/BackSpeed"
+        android:layout_width="56dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="29dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="20.0"
+        android:inputType="number"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BackLength" />
+
+    <Button
+        android:id="@+id/ManualSend"
+        android:layout_width="93dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#FFEB3E"
+        android:gravity="center"
+        android:text="手动送丝"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ManualBack" />
+
+    <Button
+        android:id="@+id/ManualBack"
+        android:layout_width="93dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#FFEB3E"
+        android:gravity="center"
+        android:text="手动回丝"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/StopSend"
+        android:layout_width="93dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#FFEB3E"
+        android:gravity="center"
+        android:text="终止送丝"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ManualBack" />
+
+    <CheckBox
+        android:id="@+id/SilkDeliveryAction"
+        android:layout_width="35dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toEndOf="@+id/textSilkDeliveryAction"
+        app:layout_constraintTop_toBottomOf="@+id/textPulseEquivalent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

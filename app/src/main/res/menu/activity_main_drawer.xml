@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_temp_control"
+            android:title="@string/menu_wenkongyi" />
+        <item
+            android:id="@+id/nav_weld"
+            android:title="@string/menu_weld" />
+        <item
+            android:id="@+id/nav_system"
+            android:title="@string/menu_systemSet" />
+        <item
+            android:id="@+id/nav_manual"
+            android:title="@string/menu_manual" />
+        <item
+            android:id="@+id/nav_wire_feed"
+            android:title="@string/menu_songsi" />
+        <item
+            android:id="@+id/solidify"
+            android:title="@string/menu_guhua" />
+        <item
+            android:id="@+id/exit"
+            android:title="@string/menu_exit"
+            android:onClick="textClick"
+            />
+
+    </group>
+</menu>

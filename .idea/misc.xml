@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/System/app/src/main/res/layout/activity_main.xml" value="0.26811594202898553" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/System/app/src/main/res/layout/app_bar_main.xml" value="0.26811594202898553" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/System/app/src/main/res/layout/content_main.xml" value="0.2635416666666667" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/System/app/src/main/res/layout/fragment_gallery.xml" value="0.26811594202898553" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/System/app/src/main/res/layout/fragment_hanjie.xml" value="0.26811594202898553" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/System/app/src/main/res/layout/fragment_home.xml" value="0.26621847886098404" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/System/app/src/main/res/layout/fragment_manual.xml" value="0.26811594202898553" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/System/app/src/main/res/layout/fragment_system.xml" value="0.26811594202898553" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/System/app/src/main/res/layout/fragment_temp_control.xml" value="0.26811594202898553" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/System/app/src/main/res/layout/fragment_weld.xml" value="0.26811594202898553" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/System/app/src/main/res/layout/fragment_wire_feed.xml" value="0.26811594202898553" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/System/app/src/main/res/layout/nav_header_main.xml" value="0.26811594202898553" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/System/app/src/main/res/menu/activity_main_drawer.xml" value="0.278125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

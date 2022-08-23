@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8B20E4FD"
+    tools:context=".ui.weld.WeldFragment"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-1dp">
+
+    <TextView
+        android:id="@+id/textLightMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="多段出光模式"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTotalSegments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="112dp"
+        android:text="总有效段数:"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="第"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHeatingEfficiency" />
+
+    <TextView
+        android:id="@+id/textDuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:text="段:"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Segments"
+        app:layout_constraintTop_toBottomOf="@+id/textHeatingEfficiency" />
+
+    <Spinner
+        android:id="@+id/TotalSegments"
+        android:layout_width="40dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="112dp"
+        android:background="@color/white"
+        android:entries="@array/TotalSegmentsData"
+        android:spinnerMode="dropdown"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDragWelding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="112dp"
+        android:text="拖焊"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/WeldMode"
+        android:layout_width="56dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="280dp"
+        android:background="@color/white"
+        android:entries="@array/ModeChoose"
+        android:spinnerMode="dropdown"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/Segments"
+        android:layout_width="40dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/white"
+        android:entries="@array/TotalSegmentsData"
+        android:spinnerMode="dropdown"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textDi"
+        app:layout_constraintTop_toBottomOf="@+id/textHeatingEfficiency" />
+
+    <TextView
+        android:id="@+id/textHeatingEfficiency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="160dp"
+        android:text="升温效率（%）:"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textWeldMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="280dp"
+        android:text="焊接模式"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textEfficiency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="328dp"
+        android:text="功率(%):"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Efficiency"
+        android:layout_width="56dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="50"
+        android:inputType="number"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WeldMode" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="424dp"
+        android:text="时长(ms):"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Time"
+        android:layout_width="56dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="1000"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Temp" />
+
+    <TextView
+        android:id="@+id/textTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="376dp"
+        android:text="温       度:"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/Temp"
+        android:layout_width="56dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="500"
+        android:inputType="number"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Efficiency" />
+
+    <EditText
+        android:id="@+id/HeatingEfficiency"
+        android:layout_width="40dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="20"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TotalSegments" />
+
+    <Button
+        android:id="@+id/ParameterDownload"
+        android:layout_width="198dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#35FF3D"
+        android:gravity="center"
+        android:text="参数下载"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/PerformWelding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/PerformWelding"
+        android:layout_width="198dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/round_frame"
+        android:backgroundTint="#FFD54F"
+        android:gravity="center"
+        android:text="执行焊接"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:onClick="PerformWelding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <CheckBox
+        android:id="@+id/DragWelding"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintStart_toEndOf="@+id/textDragWelding"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
