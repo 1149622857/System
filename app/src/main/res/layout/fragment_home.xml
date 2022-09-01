@@ -28,7 +28,7 @@
         android:layout_marginBottom="72dp"
         android:background="@drawable/sharp_frame"
         android:gravity="center"
-        android:inputType="number"
+        android:inputType="text"
         android:text="10.10.100.254"
         android:textAppearance="@android:style/TextAppearance.Material.Body1"
         android:textSize="20sp"
